@@ -13,7 +13,7 @@ Refactored from C# to Lua with improvements
 
 ## How to install
 * disable clothing stores C# if you are using replace with this one.
-* [Download the lastest version of VORP ClothingStore](https://github.com/UnderworldServers/vorp_clothingstore/releases)
+* Download the lastest version of VORP ClothingStore using ```Code > DownloadZip```
 * Copy and paste ```vorp_clothingstore``` folder to ```resources/vorp_clothingstore```
 * Add ```ensure vorp_clothingstore``` to your ```server.cfg``` file
 * To change the language go to ```Config.lua``` and change the default language
