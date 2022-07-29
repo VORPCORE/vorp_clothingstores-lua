@@ -43,6 +43,7 @@ local clothesPlayer = {
 
 function LoadModel(model)
 	if Citizen.InvokeNative(0x392C8D8E07B70EFC, model) then
+		Citizen.InvokeNative(0xFA28FE3A6246FC30, model)
 		while not HasModelLoaded(model) do
 			Citizen.Wait(100)
 		end
