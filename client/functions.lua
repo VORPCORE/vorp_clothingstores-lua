@@ -38,7 +38,8 @@ local clothesPlayer = {
 	Accessories = 0,
 	Satchels = 0,
 	GunbeltAccs = 0,
-	CoatClosed = 0
+	CoatClosed = 0,
+	HairAccessories = 0
 };
 
 function LoadModel(model)

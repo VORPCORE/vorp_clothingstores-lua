@@ -35,6 +35,7 @@ Config = {
 	  Satchels = 3.0,
 	  GunbeltAccs = 3.0,
 	  Badges = 0.5,
+	  HairAccessories = 0.5,
   },
 
   -- Store locations
