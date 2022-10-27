@@ -62,6 +62,7 @@ Locales["Fr"] = {
     Accessories = "Accessories",
     Satchels = "Sacoche",
     GunbeltAccs = "Accessoires de ceinture",
+    HairAccessories = "Accessoires pour cheveux",
 
 	--------------------------------------- Descriptions Of The Clothing Menu Sections ---------------------------------------
     Descriptions = {
@@ -96,5 +97,6 @@ Locales["Fr"] = {
 		Accessories = "Choisissez les accessoires",
 		Satchels = "Choisissez la sacoche",
 		GunbeltAccs = "choisissez l'accessoire de ceinture",
+		HairAccessories = "Choisissez un accessoire pour cheveux",
 	}
 }
