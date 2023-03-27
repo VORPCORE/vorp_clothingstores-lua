@@ -295,7 +295,7 @@ function startBuyCloths(state)
 	if not state then
 		MenuData.CloseAll()
 	else
-		TriggerServerEvent("vorpcharacter:getPlayerSkin");
+		--TriggerServerEvent("vorpcharacter:getPlayerSkin"); when finished its sending alreadu an event to characters
 	end
 	local PedExitx = Config.Stores[inShop].ExitWardrobe[1]
 	local PedExity = Config.Stores[inShop].ExitWardrobe[2]
