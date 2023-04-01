@@ -30,10 +30,10 @@ ClothesUtils = {
 		0xC9C9DBAA,
 		0xDB787F07,
 		0x4F6FE7F8,
-	};
+	},
 	HAIRACCESSORIES_MALE = {
 
-	};
+	},
 	HATS_MALE = {
 		0xC2F59087,
 		0xD44722FD,
@@ -1281,8 +1281,7 @@ ClothesUtils = {
 		0x3E8135EB,
 		0x2DC1EF25,
 		0xC36A032C,
-	};
-
+	},
 	HATS_FEMALE = {
 		0x00349628,
 		0x00C500AE,
@@ -2172,8 +2171,7 @@ ClothesUtils = {
 		0x4534CBA6,
 		0xB9EC84B9,
 		0x3E1EEA1A,
-	};
-
+	},
 	EYEWEAR_MALE = {
 		0x08953AC8,
 		0x0EC8EC48,
@@ -2230,8 +2228,7 @@ ClothesUtils = {
 		0x25C51838,
 		0xBA70F482,
 		0x10464C0B,
-	};
-
+	},
 	EYEWEAR_FEMALE = {
 		0x01890826,
 		0x0372941F,
@@ -2287,8 +2284,7 @@ ClothesUtils = {
 		0x749A7C08,
 		0xF473211B,
 		0x26ADD1AC,
-	};
-
+	},
 	NECKWEAR_MALE = {
 		0x7C76451B,
 		0xE508E276,
@@ -2585,8 +2581,7 @@ ClothesUtils = {
 		0x708D057C,
 		0x3B5879C0,
 		0x3DFC55E1,
-	};
-
+	},
 	NECKWEAR_FEMALE = {
 		0x01178FE3,
 		0x047E72BA,
@@ -2841,8 +2836,7 @@ ClothesUtils = {
 		0xCB2352FC,
 		0xF078DF9F,
 		0xD28CA7DE,
-	};
-
+	},
 	NECKTIES_MALE = {
 		0xDF4A0DD2,
 		0xF8716430,
@@ -2977,8 +2971,7 @@ ClothesUtils = {
 		0xC0CDF544,
 		0xCCF20E80,
 		0x6A9D0CF5,
-	};
-
+	},
 	NECKTIES_FEMALE = {
 		0x0164D13B,
 		0x0C0F55CB,
@@ -3094,16 +3087,15 @@ ClothesUtils = {
 		0xE92492EA,
 		0x75532A29,
 		0x16711E94,
-	};
-
+	},
 	SHIRTS_MALE = {
-		0x146F37E2,
-		0x3B171A26,
-		0x4C31BC5B,
-		0x50D5054B,
-		0x524CEF30,
-		0x5536513B,
-		0x6768F5A0,
+		--0x146F37E2,
+		--0x3B171A26,
+		--0x4C31BC5B,
+		--0x50D5054B,
+		--0x524CEF30,
+		--0x5536513B,
+		--0x6768F5A0,
 		0x9CDC866A,
 		0x97F60895,
 		0xC68365AF,
@@ -3520,8 +3512,7 @@ ClothesUtils = {
 		0x7A4F9D2B,
 		0x28BBFD59,
 		0x92071A86,
-	};
-
+	},
 	SHIRTS_FEMALE = {
 		0x004869A5,
 		0x007CDF56,
@@ -3959,8 +3950,7 @@ ClothesUtils = {
 		0x3E4E41A2,
 		0x4539360F,
 		0x8BDA5ECD,
-	};
-
+	},
 	SUSPENDERS_MALE = {
 		0x6D087754,
 		0xA7CDECDE,
@@ -4078,8 +4068,7 @@ ClothesUtils = {
 		0xABB8A81F,
 		0x9C2008E2,
 		0x94DCFB84,
-	};
-
+	},
 	SUSPENDERS_FEMALE = {
 		0x2E1735D1,
 		0x7C071589,
@@ -4153,8 +4142,7 @@ ClothesUtils = {
 		0xDDC03132,
 		0x59722868,
 		0x3EF4EDEA,
-	};
-
+	},
 	VEST_MALE = {
 		0x036F1224,
 		0x04E8FADB,
@@ -4518,8 +4506,7 @@ ClothesUtils = {
 		0xEB72761C,
 		0xBFA2F185,
 		0x501880BA,
-	};
-
+	},
 	VEST_FEMALE = {
 		0x0083F433,
 		0x00D81C82,
@@ -4813,8 +4800,7 @@ ClothesUtils = {
 		0xBD0E4187,
 		0x260390DF,
 		0x225068BD,
-	};
-
+	},
 	COATS_MALE = {
 		0x13BD3752,
 		0x01DC3960,
@@ -5312,8 +5298,7 @@ ClothesUtils = {
 		0x9A58304C,
 		0xC3A495E6,
 		0x96C72D22,
-	};
-
+	},
 	COATS_FEMALE = {
 		0x007F6FBD,
 		0x09B5A38C,
@@ -5808,8 +5793,7 @@ ClothesUtils = {
 		0x61D126B9,
 		0x887822DA,
 		0xD3B9FC41,
-	};
-
+	},
 	COATS_CLOSED_MALE = {
 		0x046C78C1,
 		0x05D4207A,
@@ -6014,8 +5998,7 @@ ClothesUtils = {
 		0xF949E870,
 		0x94BE6049,
 		0xCA45CD7D,
-	};
-
+	},
 	COATS_CLOSED_FEMALE = {
 		0x00AAE73F,
 		0x040F4BCA,
@@ -6226,8 +6209,7 @@ ClothesUtils = {
 		0xBF7A8F61,
 		0x1AF7B961,
 		0x8DD7C492,
-	};
-
+	},
 	PONCHOS_MALE = {
 		0x015F3A10,
 		0x0544CC07,
@@ -6323,8 +6305,7 @@ ClothesUtils = {
 		0x59B33048,
 		0xD5C048D7,
 		0x9EF44AC1,
-	};
-
+	},
 	PONCHOS_FEMALE = {
 		0x02116919,
 		0x092D20F9,
@@ -6417,8 +6398,7 @@ ClothesUtils = {
 		0xB15D2C13,
 		0x680BC360,
 		0x54A3B1D8,
-	};
-
+	},
 	CLOAK_MALE = {
 		0x41C8FF69,
 		0xFBB3435E,
@@ -6439,8 +6419,7 @@ ClothesUtils = {
 		0xFD04D28F,
 		0xFD705669,
 		0xBF87DDF1,
-	};
-
+	},
 	CLOAK_FEMALE = {
 		0x244DC38E,
 		0x342F6351,
@@ -6455,8 +6434,7 @@ ClothesUtils = {
 		0xE38C5F5F,
 		0xFB55F19F,
 		0x8E606E7A,
-	};
-
+	},
 	GLOVES_MALE = {
 		0xA7F580A8,
 		0x28E344D5,
@@ -6670,8 +6648,7 @@ ClothesUtils = {
 		0xAEE31BEF,
 		0x5EACA5B7,
 		0x3F23A565,
-	};
-
+	},
 	GLOVES_FEMALE = {
 		0x013CC97B,
 		0x0BC262F7,
@@ -6869,8 +6846,7 @@ ClothesUtils = {
 		0xC0D50D56,
 		0xAEC509DE,
 		0x7555BF86,
-	};
-
+	},
 	RINGS_RH_MALE = {
 		0x05B06B13,
 		0x3D9B5AE8,
@@ -6879,8 +6855,7 @@ ClothesUtils = {
 		0xDF160091,
 		0xE02AA008,
 		0xF685CCBE,
-	};
-
+	},
 	RINGS_RH_FEMALE = {
 		0x72A366A8,
 		0x807D025B,
@@ -6889,8 +6864,7 @@ ClothesUtils = {
 		0xD9C4B509,
 		0xE80E519C,
 		0xFD597C32,
-	};
-
+	},
 	RINGS_LH_MALE = {
 		0x1606D4A2,
 		0x20146469,
@@ -6906,8 +6880,7 @@ ClothesUtils = {
 		0xEE2B8098,
 		0xFF6B2317,
 		0x8A0E6CDA,
-	};
-
+	},
 	RINGS_LH_FEMALE = {
 		0x1F528866,
 		0x2D83A4C8,
@@ -6923,8 +6896,7 @@ ClothesUtils = {
 		0xDA5558F6,
 		0xF5BEF9CD,
 		0xAA8D2F16,
-	};
-
+	},
 	BRACELETS_MALE = {
 		0x05D60E31,
 		0x136BA95C,
@@ -6932,8 +6904,7 @@ ClothesUtils = {
 		0x2FDF6243,
 		0xE94B5518,
 		0xF799F1B5,
-	};
-
+	},
 	BRACELETS_FEMALE = {
 		0x64D71DBC,
 		0x73263ACA,
@@ -6941,8 +6912,7 @@ ClothesUtils = {
 		0x97A703CB,
 		0xACD52E27,
 		0xC85DE538,
-	};
-
+	},
 	GUNBELT_MALE = {
 		0x2E43D36D,
 		0x408C9C8E,
@@ -7057,8 +7027,7 @@ ClothesUtils = {
 		0xAA743093,
 		0x08D3D047,
 		0x620C1BC5,
-	};
-
+	},
 	GUNBELT_FEMALE = {
 		0x058E8391,
 		0x0F3E6DCB,
@@ -7157,8 +7126,7 @@ ClothesUtils = {
 		0x03F4F3CC,
 		0x9AF4B083,
 		0x0E2E9081,
-	};
-
+	},
 	BELT_MALE = {
 		0x57CE45CA,
 		0x58226307,
@@ -7260,8 +7228,7 @@ ClothesUtils = {
 		0xF84D0B2E,
 		0xF8EF8C6B,
 		0xFAC792D4,
-	};
-
+	},
 	BELT_FEMALE = {
 		0x01A289E2,
 		0x049B3783,
@@ -7360,8 +7327,7 @@ ClothesUtils = {
 		0xF7026B11,
 		0xF731E032,
 		0xF7C700EA,
-	};
-
+	},
 	BUCKLE_MALE = {
 		0x0678DE0C,
 		0x0879FDF3,
@@ -7593,8 +7559,7 @@ ClothesUtils = {
 		0xDA5454F1,
 		0xEF927F6D,
 		0xB7818F4C,
-	};
-
+	},
 	BUCKLE_FEMALE = {
 		0x01D43574,
 		0x0681BE0D,
@@ -7826,8 +7791,7 @@ ClothesUtils = {
 		0xF9F28D5C,
 		0xBE9416A0,
 		0x1845CA02,
-	};
-
+	},
 	HOLSTERS_S_MALE = {
 		0xA5A5989A,
 		0x359EFAD0,
@@ -7935,8 +7899,7 @@ ClothesUtils = {
 		0x6FE7950E,
 		0x82A9BA92,
 		0xDCFD561D,
-	};
-
+	},
 	HOLSTERS_S_FEMALE = {
 		0x02BC9A32,
 		0x050D9290,
@@ -8031,19 +7994,18 @@ ClothesUtils = {
 		0x76D0E8E1,
 		0x688F4C5E,
 		0xB0F80F8C,
-	};
-
+	},
 	PANTS_MALE = {
-		0x0D1129BC,
-		0x0E5E7EBC,
-		0x193FA872,
-		0x2348562A,
-		0x2F659E51,
-		0xA27AD48D,
-		0xA5532C9F,
-		0xB7B4FF01,
-		0xD2E52DA6,
-		0xF9F8A51D,
+		--0x0D1129BC,
+		--0x0E5E7EBC,
+		--0x193FA872,
+		--0x2348562A,
+		--0x2F659E51,
+		--0xA27AD48D,
+		--0xA5532C9F,
+		--0xB7B4FF01,
+		--0xD2E52DA6,
+		--0xF9F8A51D,
 		0xD00D4014,
 		0x0913F63D,
 		0xDAC999A9,
@@ -8658,8 +8620,7 @@ ClothesUtils = {
 		0xB656FCA5,
 		0x0B68AE67,
 		0x7DA5A6D8,
-	};
-
+	},
 	PANTS_FEMALE = {
 		0x0113B76C,
 		0x01CF58C7,
@@ -9081,8 +9042,7 @@ ClothesUtils = {
 		0x1DDC1E22,
 		0xD51C0D93,
 		0xFE6E5D64,
-	};
-
+	},
 	SKIRTS_FEMALE = {
 		0x02302B54,
 		0x028B08F2,
@@ -9219,8 +9179,7 @@ ClothesUtils = {
 		0x403203AA,
 		0x75C96ED8,
 		0x271952E9,
-	};
-
+	},
 	BOOTS_MALE = {
 		0x38B4CA64,
 		0xE90F4791,
@@ -9985,8 +9944,7 @@ ClothesUtils = {
 		0x22B62CE4,
 		0x0825A807,
 		0xE1EE57AB,
-	};
-
+	},
 	BOOTS_FEMALE = {
 		0x019ADA9E,
 		0x01AFAC5E,
@@ -10605,8 +10563,7 @@ ClothesUtils = {
 		0x7B99B96D,
 		0x5A3D80D9,
 		0x2E9CE93B,
-	};
-
+	},
 	CHAPS_MALE = {
 		0x3B2C8C3C,
 		0x6EE3F3AA,
@@ -10704,8 +10661,7 @@ ClothesUtils = {
 		0x0FCC1B60,
 		0x0847FFD8,
 		0xB6A6305B,
-	};
-
+	},
 	CHAPS_FEMALE = {
 		0x1A2F70C8,
 		0xB6A0A9AC,
@@ -10773,8 +10729,7 @@ ClothesUtils = {
 		0x0A1A8825,
 		0xC24F0FDF,
 		0x0D94034C,
-	};
-
+	},
 	SPURS_MALE = {
 		0xC589C410,
 		0xCE51F28C,
@@ -10993,8 +10948,7 @@ ClothesUtils = {
 		0xE6E8864E,
 		0x2F709755,
 		0x4F66D869,
-	};
-
+	},
 	SPURS_FEMALE = {
 		0x0F40D0A3,
 		0x215AEE8C,
@@ -11123,8 +11077,7 @@ ClothesUtils = {
 		0x2B9ED515,
 		0x60563E83,
 		0x70BFDE6A,
-	};
-
+	},
 	SPATS_MALE = {
 		0x953D528E,
 		0x49A14A8D,
@@ -11302,8 +11255,7 @@ ClothesUtils = {
 		0x6E682161,
 		0xD6E77A62,
 		0x58385F40,
-	};
-
+	},
 	SPATS_FEMALE = {
 		0x067E8D91,
 		0x0A56CAE6,
@@ -11438,8 +11390,7 @@ ClothesUtils = {
 		0xB9E8929D,
 		0x7D2893B2,
 		0x04A0405E,
-	};
-
+	},
 	GAUNTLETS_MALE = {
 		0x032FD78A,
 		0x147CFA24,
@@ -11456,8 +11407,7 @@ ClothesUtils = {
 		0x88895525,
 		0x7C613CE1,
 		0x166A3B1B,
-	};
-
+	},
 	GAUNTLETS_FEMALE = {
 		0x2835F713,
 		0x310708B1,
@@ -11474,8 +11424,7 @@ ClothesUtils = {
 		0xEB578A72,
 		0x1A16E7F0,
 		0x6DCE8116,
-	};
-
+	},
 	LOADOUTS_MALE = {
 		0xF1292B9D,
 		0x6FE8F76B,
@@ -11640,8 +11589,7 @@ ClothesUtils = {
 		0xFEF23110,
 		0xFFBC0CE2,
 		0x12770ABE,
-	};
-
+	},
 	LOADOUTS_FEMALE = {
 		0x0145C005,
 		0x01687914,
@@ -11794,8 +11742,7 @@ ClothesUtils = {
 		0xFD5248C9,
 		0xCBF9F817,
 		0xD42658ED,
-	};
-
+	},
 	ACCESSORIES_MALE = {
 		0x1C92E7D8,
 		0x06599ED2,
@@ -11856,8 +11803,7 @@ ClothesUtils = {
 		0xECD9854C,
 		0xF0737306,
 		0xFB1C21D1,
-	};
-
+	},
 	ACCESSORIES_FEMALE = {
 		0x0B000EE4,
 		0x0B235729,
@@ -11918,18 +11864,15 @@ ClothesUtils = {
 		0xF4E3FC46,
 		0xF88A838F,
 		0xF9C8E1AC,
-	};
-
+	},
 	SATCHELS_MALE = {
 		0x7D84EFD5,
 		0xEE49F9B6,
-	};
-
+	},
 	SATCHELS_FEMALE = {
-	   0x7E2D016B,
-	   0xFCAF241B,
-	};
-
+		0x7E2D016B,
+		0xFCAF241B,
+	},
 	GUNBELTACCS_MALE = {
 		0x102CB403,
 		0x1D2911AF,
@@ -11951,8 +11894,7 @@ ClothesUtils = {
 		0x0972D221,
 		0xE6FF36CB,
 
-	};
-
+	},
 	GUNBELTACCS_FEMALE = {
 		0x3A8E3217,
 		0x402D4AB2,
@@ -11973,8 +11915,7 @@ ClothesUtils = {
 		0x8C75DF22,
 		0x9AD37BDD,
 		0x60583652,
-	};
-
+	},
 	MASK_MALE = {
 		0x06520827,
 		0x06BABBDD,
@@ -12063,8 +12004,7 @@ ClothesUtils = {
 		0xFE7E0CC1,
 		0xFFA15B10,
 		0x281E609D,
-	};
-
+	},
 	MASK_FEMALE = {
 		0x00BEA7D8,
 		0x00C59A1E,
@@ -12146,7 +12086,7 @@ ClothesUtils = {
 		0xFFB213E5,
 		0xFFEA783D,
 		0xD03C1734,
-	};
+	},
 }
 
 ----------------------------------------------------------------------------------------------------------
@@ -12257,35 +12197,65 @@ CategoryClothesPlayer = {
 }
 
 CategoryRawNames = {
-	HATS_MALE = "Hats"; HATS_FEMALE = "Hats";
-	EYEWEAR_MALE = "Glasses"; EYEWEAR_FEMALE = "Glasses";
-	NECKWEAR_MALE = "Neckwear"; NECKWEAR_FEMALE = "Neckwear";
-	NECKTIES_MALE = "Ties"; NECKTIES_FEMALE = "Ties";
-	SHIRTS_MALE = "Shirts"; SHIRTS_FEMALE = "Shirts";
-	SUSPENDERS_MALE = "Suspenders"; SUSPENDERS_FEMALE = "Suspenders";
-	VEST_MALE = "Vests"; VEST_FEMALE = "Vests";
-	COATS_MALE = "Coats"; COATS_FEMALE = "Coats";
-	COATS_CLOSED_MALE = "CoatsClosed"; COATS_CLOSED_FEMALE = "CoatsClosed";
-	PONCHOS_MALE = "Ponchos"; PONCHOS_FEMALE = "Ponchos";
-	CLOAK_MALE = "Cloaks"; CLOAK_FEMALE = "Cloaks";
-	GLOVES_MALE = "Gloves"; GLOVES_FEMALE = "Gloves";
-	RINGS_RH_MALE = "RightRings"; RINGS_RH_FEMALE = "RightRings";
-	RINGS_LH_MALE = "LeftRings"; RINGS_LH_FEMALE = "LeftRings";
-	BRACELETS_MALE = "Bracelets"; BRACELETS_FEMALE = "Bracelets";
-	GUNBELT_MALE = "PrimaryHolsters"; GUNBELT_FEMALE =  "PrimaryHolsters";
-	BELT_MALE = "Belts"; BELT_FEMALE =  "Belts";
-	BUCKLE_MALE = "Buckles"; BUCKLE_FEMALE = "Buckles";
-	HOLSTERS_S_MALE = "SecondaryHolsters"; HOLSTERS_S_FEMALE = "SecondaryHolsters";
-	PANTS_MALE = "Pants"; PANTS_FEMALE = "Pants";
-	SKIRTS_FEMALE = "Skirts";
-	BOOTS_MALE = "Boots"; BOOTS_FEMALE = "Boots";
-	CHAPS_MALE = "Chaps"; CHAPS_FEMALE = "Chaps";
-	SPURS_MALE = "Spurs"; SPURS_FEMALE = "Spurs";
-	SPATS_MALE = "Spats"; SPATS_FEMALE = "Spats";
-	GAUNTLETS_MALE = "Gauntlets"; GAUNTLETS_FEMALE = "Gauntlets";
-	LOADOUTS_MALE = "Loadouts"; LOADOUTS_FEMALE = "Loadouts";
-	ACCESSORIES_MALE = "Accessories"; ACCESSORIES_FEMALE = "Accessories";
-	SATCHELS_MALE = "Satchels"; SATCHELS_FEMALE =  "Satchels";
-	GUNBELTACCS_MALE = "GunbeltAccs"; GUNBELTACCS_FEMALE =  "GunbeltAccs";
-	MASK_MALE = "Masks"; MASK_FEMALE = "Masks"
+	HATS_MALE = "Hats",
+	HATS_FEMALE = "Hats",
+	EYEWEAR_MALE = "Glasses",
+	EYEWEAR_FEMALE = "Glasses",
+	NECKWEAR_MALE = "Neckwear",
+	NECKWEAR_FEMALE = "Neckwear",
+	NECKTIES_MALE = "Ties",
+	NECKTIES_FEMALE = "Ties",
+	SHIRTS_MALE = "Shirts",
+	SHIRTS_FEMALE = "Shirts",
+	SUSPENDERS_MALE = "Suspenders",
+	SUSPENDERS_FEMALE = "Suspenders",
+	VEST_MALE = "Vests",
+	VEST_FEMALE = "Vests",
+	COATS_MALE = "Coats",
+	COATS_FEMALE = "Coats",
+	COATS_CLOSED_MALE = "CoatsClosed",
+	COATS_CLOSED_FEMALE = "CoatsClosed",
+	PONCHOS_MALE = "Ponchos",
+	PONCHOS_FEMALE = "Ponchos",
+	CLOAK_MALE = "Cloaks",
+	CLOAK_FEMALE = "Cloaks",
+	GLOVES_MALE = "Gloves",
+	GLOVES_FEMALE = "Gloves",
+	RINGS_RH_MALE = "RightRings",
+	RINGS_RH_FEMALE = "RightRings",
+	RINGS_LH_MALE = "LeftRings",
+	RINGS_LH_FEMALE = "LeftRings",
+	BRACELETS_MALE = "Bracelets",
+	BRACELETS_FEMALE = "Bracelets",
+	GUNBELT_MALE = "PrimaryHolsters",
+	GUNBELT_FEMALE = "PrimaryHolsters",
+	BELT_MALE = "Belts",
+	BELT_FEMALE = "Belts",
+	BUCKLE_MALE = "Buckles",
+	BUCKLE_FEMALE = "Buckles",
+	HOLSTERS_S_MALE = "SecondaryHolsters",
+	HOLSTERS_S_FEMALE = "SecondaryHolsters",
+	PANTS_MALE = "Pants",
+	PANTS_FEMALE = "Pants",
+	SKIRTS_FEMALE = "Skirts",
+	BOOTS_MALE = "Boots",
+	BOOTS_FEMALE = "Boots",
+	CHAPS_MALE = "Chaps",
+	CHAPS_FEMALE = "Chaps",
+	SPURS_MALE = "Spurs",
+	SPURS_FEMALE = "Spurs",
+	SPATS_MALE = "Spats",
+	SPATS_FEMALE = "Spats",
+	GAUNTLETS_MALE = "Gauntlets",
+	GAUNTLETS_FEMALE = "Gauntlets",
+	LOADOUTS_MALE = "Loadouts",
+	LOADOUTS_FEMALE = "Loadouts",
+	ACCESSORIES_MALE = "Accessories",
+	ACCESSORIES_FEMALE = "Accessories",
+	SATCHELS_MALE = "Satchels",
+	SATCHELS_FEMALE = "Satchels",
+	GUNBELTACCS_MALE = "GunbeltAccs",
+	GUNBELTACCS_FEMALE = "GunbeltAccs",
+	MASK_MALE = "Masks",
+	MASK_FEMALE = "Masks"
 }
