@@ -433,13 +433,13 @@ function MainClothingMenu()
 			label = _('TitleMenuClothes'),
 			value = 'ClothingMenu',
 			desc = _('SubTitleMenuClothes'),
-			image = "nui://vorp_clothingstore/images/clothing_purchase.png",
+			image = "nui://vorp_clothingstores/images/clothing_purchase.png",
 		},
 		{
 			label = _('TitleMenuOutfits'),
 			value = 'OutfitMenu',
 			desc = _('SubTitleMenuOutfits'),
-			image = "nui://vorp_clothingstore/images/kit_wardrobe.png",
+			image = "nui://vorp_clothingstores/images/kit_wardrobe.png",
 		},
 	}
 
