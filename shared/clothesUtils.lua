@@ -12126,6 +12126,7 @@ CategoryHashes = {
 	Satchels = 0x94504D26,
 	GunbeltAccs = 0xF1542D11,
 	Masks = 0x7505EF42,
+	HairAccessories = 0x8E84A2AA,
 }
 
 CategoryDBName = {
@@ -12160,6 +12161,7 @@ CategoryDBName = {
 	Satchels = 0x94504D26,
 	GunbeltAccs = 0xF1542D11,
 	Mask = 0x7505EF42,
+	HairAccessories = 0x8E84A2AA,
 }
 
 CategoryClothesPlayer = {
@@ -12194,6 +12196,7 @@ CategoryClothesPlayer = {
 	Satchels = "Satchels",
 	GunbeltAccs = "GunbeltAccs",
 	Masks = "Mask",
+	HairAccessories = "bow",
 }
 
 CategoryRawNames = {
@@ -12257,5 +12260,7 @@ CategoryRawNames = {
 	GUNBELTACCS_MALE = "GunbeltAccs",
 	GUNBELTACCS_FEMALE = "GunbeltAccs",
 	MASK_MALE = "Masks",
-	MASK_FEMALE = "Masks"
+	MASK_FEMALE = "Masks",
+	HAIRACCESSORIES_FEMALE = "HairAccessories",
+    	HAIRACCESSORIES_MALE = "HairAccessories",
 }
