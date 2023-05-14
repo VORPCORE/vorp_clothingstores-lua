@@ -1,4 +1,4 @@
-Lang = "Portugues_BR"
+Lang = "English"
 
 Config = {
   debugMode = false, -- LEAVE SET TO FALSE
