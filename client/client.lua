@@ -2,9 +2,11 @@ StoreBlips, StorePeds, initComplete = {}, {}, false
 Pedheading, DressHeading, cameraIndex = 0.0, 0.0, 0
 inShop, loadingData, totalCost = false, false, 0
 
+T = TranslationCloth.Langs[Lang]
+
 MenuData = {}
-TriggerEvent("menuapi:getData",function(call)
-    MenuData = call
+TriggerEvent("menuapi:getData", function(call)
+	MenuData = call
 end)
 
 Citizen.CreateThread(function()
@@ -12,10 +14,10 @@ Citizen.CreateThread(function()
 		local delayThread, playerPed = 500, PlayerPedId()
 		if initComplete and not inShop then
 			local playerCoords = GetEntityCoords(playerPed)
-			for k,v in pairs(Config.Stores) do
+			for k, v in pairs(Config.Stores) do
 				if #(playerCoords - vector3(v.EnterStore[1], v.EnterStore[2], v.EnterStore[3])) < v.EnterStore[4] then
 					delayThread = 5
-					DrawText(_("PressToOpen"), 0.5, 0.9, 0.7, 0.7, 255, 255, 255, 255, true, true);
+					DrawText((T.PressToOpen), 0.5, 0.9, 0.7, 0.7, 255, 255, 255, 255, true, true);
 					if IsControlJustPressed(2, 0xD9D0E1C0) then
 						inShop = true
 						TriggerServerEvent("vorpclothingstore:getPlayerCloths");
@@ -27,14 +29,16 @@ Citizen.CreateThread(function()
 		elseif inShop and inShop > 0 then
 			delayThread = 2
 			if loadingData then
-				DrawText(_("LoadingOverlay"), 0.5, 0.9, 0.7, 0.7, 255, 84, 84, 255, true, true)
+				DrawText((T.LoadingOverlay), 0.5, 0.9, 0.7, 0.7, 255, 84, 84, 255, true, true)
 			else
-				DrawText(_("PressGuide"), 0.5, 0.9, 0.7, 0.7, 255, 255, 255, 255, true, true);
+				DrawText((T.PressGuide), 0.5, 0.9, 0.7, 0.7, 255, 255, 255, 255, true, true);
 			end
-			if totalCost > 0 then; DrawText(_("CostOverlay") .. totalCost, 0.95, 0.9, 0.4, 0.4, 255, 250, 184, 255, false, true); end
-			
+			if totalCost > 0 then
+				; DrawText((T.CostOverlay) .. totalCost, 0.95, 0.9, 0.4, 0.4, 255, 250, 184, 255, false, true);
+			end
+
 			DisableAllControlActions(0)
-			
+
 			if IsControlJustPressed(0, 0x8FD015D8) or IsDisabledControlJustPressed(0, 0x8FD015D8) then
 				cameraIndex = cameraIndex + 1;
 				if (cameraIndex > 4) then
@@ -59,7 +63,7 @@ Citizen.CreateThread(function()
 				DressHeading = DressHeading - 1.0;
 				SetEntityHeading(playerPed, DressHeading);
 			end
-			
+
 			if IsPedDeadOrDying(playerPed) then
 				EmergencyCleanup()
 			end

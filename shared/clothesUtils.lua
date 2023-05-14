@@ -12262,5 +12262,5 @@ CategoryRawNames = {
 	MASK_MALE = "Masks",
 	MASK_FEMALE = "Masks",
 	HAIRACCESSORIES_FEMALE = "HairAccessories",
-    	HAIRACCESSORIES_MALE = "HairAccessories",
+	HAIRACCESSORIES_MALE = "HairAccessories",
 }

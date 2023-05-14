@@ -1,4 +1,7 @@
 local VORPcore = {}
+
+T = TranslationCloth.Langs[Lang]
+
 TriggerEvent("getCore", function(core)
 	VORPcore = core
 end)
@@ -23,10 +26,10 @@ AddEventHandler('vorpclothingstore:getPlayerCloths', function(result)
 	if sid then
 		exports["ghmattimysql"]:execute("SELECT * FROM outfits WHERE `identifier` = ? AND `charidentifier` = ?",
 			{ sid, charIdentifier }, function(result)
-			if result then
-				TriggerClientEvent('vorpclothingstore:LoadYourOutfits', _source, result)
-			end
-		end)
+				if result then
+					TriggerClientEvent('vorpclothingstore:LoadYourOutfits', _source, result)
+				end
+			end)
 	else
 		print("Error: SteamID not found for " .. _source)
 	end
@@ -45,22 +48,23 @@ AddEventHandler('vorpclothingstore:buyPlayerCloths', function(totalCost, jsonClo
 	end
 	local userMoney = Character.money
 	if totalCost <= userMoney then
-		TriggerClientEvent("vorpcharacter:updateCache", _source, false,jsonCloths)
+		TriggerClientEvent("vorpcharacter:updateCache", _source, false, jsonCloths)
 		local charIdentifier = Character.charIdentifier
 		if sid then
 			if saveOutfit then
-				exports.ghmattimysql:execute("INSERT INTO outfits (identifier,charidentifier,title,comps) VALUES (?,?,?,?)",
+				exports.ghmattimysql:execute(
+					"INSERT INTO outfits (identifier,charidentifier,title,comps) VALUES (?,?,?,?)",
 					{ sid, charIdentifier, outfitName, jsonCloths });
 			end
 		else
 			print("Error: SteamID not found for " .. _source)
 		end
 		Character.removeCurrency(0, totalCost)
-		TriggerClientEvent("vorp:Tip", _source, _("SuccessfulBuy") .. " $" .. totalCost, 4000)
+		TriggerClientEvent("vorp:Tip", _source, T.SuccessfulBuy .. " $" .. totalCost, 4000)
 		Wait(1000) -- Gives a little extra time to read the message
 		TriggerClientEvent("vorpclothingstore:startBuyCloths", _source, true)
 	else
-		TriggerClientEvent("vorp:Tip", _source, _("NoMoney"), 4000)
+		TriggerClientEvent("vorp:Tip", _source, T.NoMoney, 4000)
 		Wait(1000) -- Gives a little extra time to read the message
 		TriggerClientEvent("vorpclothingstore:startBuyCloths", _source, false)
 	end
@@ -70,7 +74,7 @@ RegisterNetEvent('vorpclothingstore:setOutfit')
 AddEventHandler('vorpclothingstore:setOutfit', function(result)
 	local _source = source
 	if result then
-	TriggerClientEvent("vorpcharacter:updateCache", _source,false, result)
+		TriggerClientEvent("vorpcharacter:updateCache", _source, false, result)
 	end
 end)
 

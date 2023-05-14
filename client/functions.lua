@@ -1,6 +1,8 @@
 local CamWardrove, CamUp, CamMid, CamBot, playerSex
 local outfits_db, MyOutfits, ClothesDB, SkinsDB, originalOutfit, VORPcore = {}, {}, {}, {}, {}, {}
 
+T = TranslationCloth.Langs[Lang]
+
 TriggerEvent("getCore", function(core) -- Only using for bucket routing ATM
 	VORPcore = core
 end)
@@ -175,7 +177,7 @@ function MoveToCoords(loc)
 
 	Citizen.Wait(1000);
 	NetworkSetInSpectatorMode(true, playerPed);
-	
+
 	DisplayRadar(false)
 	DisplayHud(false)
 	TriggerEvent("vorp:showUi", false)
@@ -279,13 +281,14 @@ end
 function FinishBuy(buy, cost)
 	local saveOutfit, outfitName = false, ""
 	if buy then
-		TriggerEvent("vorpinputs:getInput", _("ButtonNewOutfit"), _("PlaceHolderNewOutfit"), function(result)
+		TriggerEvent("vorpinputs:getInput", T.ButtonNewOutfit, T.PlaceHolderNewOutfit, function(result)
 			if result ~= "" or result then
 				outfitName = result
 				saveOutfit = true
 			end
 
-			TriggerServerEvent("vorpclothingstore:buyPlayerCloths", cost, json.encode(clothesPlayer), saveOutfit, outfitName);
+			TriggerServerEvent("vorpclothingstore:buyPlayerCloths", cost, json.encode(clothesPlayer), saveOutfit,
+				outfitName);
 			return
 		end)
 	end
@@ -313,7 +316,7 @@ function startBuyCloths(state)
 
 	SetEntityCoords(PlayerPedId(), PedExitx, PedExity, PedExitz, false, false, false, false);
 	SetEntityHeading(PlayerPedId(), PedExitheading);
-	
+
 	DisplayRadar(true)
 	DisplayHud(true)
 	TriggerEvent("vorp:showUi", true)
@@ -369,11 +372,11 @@ function PreviewOutfit(index)
 end
 
 function SetPlayerComponent(menuVal, catName, rawCat)
-	local catHash = CategoryHashes[catName] -- Ex. "0x9925C067"
+	local catHash = CategoryHashes[catName]       -- Ex. "0x9925C067"
 	local playerPed = PlayerPedId()
 	local clothPlay = CategoryClothesPlayer[catName] -- Ex. "RingRh" - Match original category names in DB
 
-	if clothPlay == "Coat" then -- Carried over from original code, probably necessary
+	if clothPlay == "Coat" then                   -- Carried over from original code, probably necessary
 		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x0662AC34, 0);
 		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
 		clothesPlayer["CoatClosed"] = -1
@@ -430,15 +433,15 @@ function MainClothingMenu()
 
 	local elements = {
 		{
-			label = _('TitleMenuClothes'),
+			label = T.TitleMenuClothes,
 			value = 'ClothingMenu',
-			desc = _('SubTitleMenuClothes'),
+			desc = T.SubTitleMenuClothes,
 			image = "nui://vorp_clothingstores/images/clothing_purchase.png",
 		},
 		{
-			label = _('TitleMenuOutfits'),
+			label = T.TitleMenuOutfits,
 			value = 'OutfitMenu',
-			desc = _('SubTitleMenuOutfits'),
+			desc = T.SubTitleMenuOutfits,
 			image = "nui://vorp_clothingstores/images/kit_wardrobe.png",
 		},
 	}
@@ -477,8 +480,8 @@ function ClothingMenu()
 			local labelForm, descForm, elmNum = "N/A", "N/A", (#elements + 1)
 			if CategoryRawNames[k] then
 				local convertedFormat = CategoryRawNames[k]
-				labelForm = _(convertedFormat) -- Look up table to make the conversion in a loop
-				descForm = Locales[Config.defaultlang].Descriptions[convertedFormat] -- instead of each element being declared
+				labelForm = TranslationCloth.Langs[Lang].ClothingMenu[convertedFormat] -- Look up table to make the conversion in a loop
+				descForm = TranslationCloth.Langs[Lang].Descriptions[convertedFormat] -- instead of each element being declared
 			end
 
 			elements[elmNum] = {
@@ -486,19 +489,19 @@ function ClothingMenu()
 				desc = descForm,
 				type = "slider",
 				value = 0,
-				min = -1,	-- True min is 0, when value hits -1 it rolls over to max
+				min = -1, -- True min is 0, when value hits -1 it rolls over to max
 				max = (#v + 1),
 				trueMax = #v,
-				rawName = k, -- Ex. "RINGS_RH_MALE"
-				catItem = CategoryRawNames[k], -- Ex. "RINGS_RH_MALE" > "RightRings"
-				dbName = CategoryClothesPlayer[CategoryRawNames[k]]	-- Ex. RingRh
+				rawName = k,                            -- Ex. "RINGS_RH_MALE"
+				catItem = CategoryRawNames[k],          -- Ex. "RINGS_RH_MALE" > "RightRings"
+				dbName = CategoryClothesPlayer[CategoryRawNames[k]] -- Ex. RingRh
 			}
-			
-			for k2,v2 in pairs(clothesPlayer) do
+
+			for k2, v2 in pairs(clothesPlayer) do
 				if k2 == elements[elmNum].dbName then
-					for y,z in pairs(ClothesUtils[elements[elmNum].rawName]) do
+					for y, z in pairs(ClothesUtils[elements[elmNum].rawName]) do
 						if v2 == z then
-							elements[elmNum].value = y	-- If player has specified category equipped, set menu value to worn
+							elements[elmNum].value = y -- If player has specified category equipped, set menu value to worn
 							break
 						end
 					end
@@ -507,13 +510,16 @@ function ClothingMenu()
 		end
 	end
 
-	elements[#elements + 1] = { label = _('Finish'), value = "purchase",
-		image = "nui://vorp_clothingstore/images/clothing_purchase.png" }
+	elements[#elements + 1] = {
+		label = T.Finish,
+		value = "purchase",
+		image = "nui://vorp_clothingstore/images/clothing_purchase.png"
+	}
 
 	MenuData.Open('default', GetCurrentResourceName(), "ClothingMenu",
 		{
-			title    = _('TitleMenuClothes'),
-			subtext  = _('SubTitleMenuClothes'),
+			title    = T.TitleMenuClothes,
+			subtext  = T.SubTitleMenuClothes,
 			align    = 'top-left',
 			elements = elements,
 		},
@@ -523,19 +529,22 @@ function ClothingMenu()
 				FinishBuy(true, totalCost)
 				menu.close()
 			elseif data.current.type == "slider" and data.current.value < 0 then
-				for k,v in pairs(menu.data.elements) do
+				for k, v in pairs(menu.data.elements) do
 					if v.rawName == data.current.rawName then
 						data.current.value = data.current.trueMax
 						menu.setElement(k, "value", data.current.trueMax)
 						menu.refresh()
 						SetPlayerComponent(data.current.value, data.current.catItem, data.current.rawName)
-						if not selectedComponents[data.current.rawName] then totalCost = totalCost + Config.Cost[data.current.catItem]; end
+						if not selectedComponents[data.current.rawName] then
+							totalCost = totalCost +
+								Config.Cost[data.current.catItem];
+						end
 						selectedComponents[data.current.rawName] = data.current.value
 						break
 					end
 				end
 			elseif data.current.type == "slider" and data.current.value > data.current.trueMax then
-				for k,v in pairs(menu.data.elements) do
+				for k, v in pairs(menu.data.elements) do
 					if v.rawName == data.current.rawName then
 						data.current.value = 0
 						menu.setElement(k, "value", 0)
@@ -550,7 +559,10 @@ function ClothingMenu()
 				for k, v in pairs(data.elements) do
 					if data.current.value > 0 and (selectedComponents[data.current.rawName] ~= data.current.value) then
 						SetPlayerComponent(data.current.value, data.current.catItem, data.current.rawName)
-						if not selectedComponents[data.current.rawName] then totalCost = totalCost + Config.Cost[data.current.catItem]; end
+						if not selectedComponents[data.current.rawName] then
+							totalCost = totalCost +
+								Config.Cost[data.current.catItem];
+						end
 						selectedComponents[data.current.rawName] = data.current.value
 					elseif data.current.value == 0 and selectedComponents[data.current.rawName] then
 						SetPlayerComponent(0, data.current.catItem, data.current.rawName)
@@ -585,8 +597,8 @@ function OutfitMenu()
 
 	MenuData.Open('default', GetCurrentResourceName(), "OutfitMenu",
 		{
-			title    = _('TitleMenuOutfits'),
-			subtext  = _('SubTitleMenuOutfits'),
+			title    = T.TitleMenuOutfits,
+			subtext  = T.SubTitleMenuOutfits,
 			align    = 'top-left',
 			elements = elements,
 		},
@@ -610,13 +622,17 @@ function OutfitSubMenu(index, outfitId)
 	local selectedOutfit, dbId = index, outfitId
 
 	elements = {
-		{ label = _('TitleMenuOutfitsUseBtn'), value = "wear", image = "nui://vorp_clothingstore/images/kit_wardrobe.png" },
-		{ label = _('TitleMenuOutfitsDeleteBtn'), value = "delete" }
+		{
+			label = T.TitleMenuOutfitsUseBtn,
+			value = "wear",
+			image = "nui://vorp_clothingstore/images/kit_wardrobe.png"
+		},
+		{ label = T.TitleMenuOutfitsDeleteBtn, value = "delete" }
 	}
 	MenuData.Open('default', GetCurrentResourceName(), "OutfitSubMenu",
 		{
-			title    = _('TitleMenuOutfits'),
-			subtext  = _('SubTitleMenuOutfits'),
+			title    = T.TitleMenuOutfits,
+			subtext  = T.SubTitleMenuOutfits,
 			align    = 'top-left',
 			elements = elements,
 		},
