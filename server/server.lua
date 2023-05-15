@@ -1,6 +1,6 @@
 local VORPcore = {}
 
-T = TranslationCloth.Langs[Lang]
+local T = TranslationCloth.Langs[Lang]
 
 TriggerEvent("getCore", function(core)
 	VORPcore = core
