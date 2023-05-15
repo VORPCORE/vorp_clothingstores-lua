@@ -2,7 +2,7 @@ StoreBlips, StorePeds, initComplete = {}, {}, false
 Pedheading, DressHeading, cameraIndex = 0.0, 0.0, 0
 inShop, loadingData, totalCost = false, false, 0
 
-T = TranslationCloth.Langs[Lang]
+local T = TranslationCloth.Langs[Lang]
 
 MenuData = {}
 TriggerEvent("menuapi:getData", function(call)
