@@ -489,7 +489,7 @@ function ClothingMenu()
 				desc = descForm,
 				type = "slider",
 				value = 0,
-				min = -1, -- True min is 0, when value hits -1 it rolls over to max
+				min = 0, -- True min is 0, when value hits -1 it rolls over to max
 				max = (#v + 1),
 				trueMax = #v,
 				rawName = k,                            -- Ex. "RINGS_RH_MALE"
