@@ -47,7 +47,8 @@ AddEventHandler('vorpclothingstore:buyPlayerCloths', function(totalCost, jsonClo
 		end
 	end
 	local userMoney = Character.money
-	if totalCost <= userMoney then
+
+	if totalCost > 0 and totalCost <= userMoney then
 		TriggerClientEvent("vorpcharacter:updateCache", _source, false, jsonCloths)
 		local charIdentifier = Character.charIdentifier
 		if sid then
