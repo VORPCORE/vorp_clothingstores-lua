@@ -511,7 +511,7 @@ function ClothingMenu()
 	elements[#elements + 1] = {
 		label = T.Finish,
 		value = "purchase",
-		image = "nui://vorp_clothingstore/images/clothing_purchase.png"
+		image = "nui://vorp_clothingstores/images/clothing_purchase.png"
 	}
 
 	MenuData.Open('default', GetCurrentResourceName(), "ClothingMenu",
@@ -623,7 +623,7 @@ function OutfitSubMenu(index, outfitId)
 		{
 			label = T.TitleMenuOutfitsUseBtn,
 			value = "wear",
-			image = "nui://vorp_clothingstore/images/kit_wardrobe.png"
+			image = "nui://vorp_clothingstores/images/kit_wardrobe.png"
 		},
 		{ label = T.TitleMenuOutfitsDeleteBtn, value = "delete" }
 	}
