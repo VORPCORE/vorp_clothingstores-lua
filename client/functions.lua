@@ -423,6 +423,8 @@ function SetPlayerComponent(menuVal, catName, rawCat)
 	end
 end
 
+local IMG = "<img style='max-height:120px;max-width:120px;float:center;' src='nui://" ..
+	GetCurrentResourceName() .. "/images/%s.png'><br>"
 function MainClothingMenu()
 	MenuData.CloseAll()
 	local cFG = Config.Stores[1]
@@ -431,14 +433,12 @@ function MainClothingMenu()
 		{
 			label = T.TitleMenuClothes,
 			value = 'ClothingMenu',
-			desc = T.SubTitleMenuClothes,
-			image = "nui://vorp_clothingstores/images/clothing_purchase.png",
+			desc = IMG:format("clothing_purchase") .. "<br>" .. T.SubTitleMenuClothes,
 		},
 		{
 			label = T.TitleMenuOutfits,
 			value = 'OutfitMenu',
-			desc = T.SubTitleMenuOutfits,
-			image = "nui://vorp_clothingstores/images/kit_wardrobe.png",
+			desc = IMG:format("kit_wardrobe") .. "<br>" .. T.SubTitleMenuOutfits,
 		},
 	}
 
@@ -511,7 +511,7 @@ function ClothingMenu()
 	elements[#elements + 1] = {
 		label = T.Finish,
 		value = "purchase",
-		desc = "nui://" .. GetCurrentResourceName() .. "/images/clothing_purchase.png"
+		desc = IMG:format("clothing_purchase") --"nui://" .. GetCurrentResourceName() .. "/images/clothing_purchase.png"
 	}
 
 	MenuData.Open('default', GetCurrentResourceName(), "ClothingMenu",
@@ -623,7 +623,7 @@ function OutfitSubMenu(index, outfitId)
 		{
 			label = T.TitleMenuOutfitsUseBtn,
 			value = "wear",
-			desc = "nui://" .. GetCurrentResourceName() .. "/images/kit_wardrobe.png"
+			desc = IMG:format("kit_wardrobe") --"nui://" .. GetCurrentResourceName() .. "/images/kit_wardrobe.png"
 		},
 		{ label = T.TitleMenuOutfitsDeleteBtn, value = "delete" }
 	}
