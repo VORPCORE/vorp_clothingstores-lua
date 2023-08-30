@@ -468,7 +468,7 @@ function ClothingMenu()
 	MenuData.CloseAll()
 	local elements = {}
 	local selectedComponents = {}
-	local totalCost = 0
+	totalCost = 0
 
 	for k, v in pairs(ClothesUtils) do
 		if string.find(string.lower(k), "_" .. playerSex) then
